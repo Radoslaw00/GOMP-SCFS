@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\math",
+    "\\src\\plan",
+    "\\src\\sensors",
+    "\\src\\telemetry"
+  ],
+  "SelectedNode": "\\src\\math\\math.c",
+  "PreviewInSolutionExplorer": false
+}
