@@ -1,21 +1,27 @@
-//The target platform: Embedded system with limited resources
-//MAIN EVENT LOOP
+//The target platform: Embedded system / RAD CPU class computer
+
+/*			!!!		MAIN EVENT LOOP		!!! 		*/
 
 //Include necessary headers
-#include <sensors.h>
-/*
-#include
-#include
-#include
-#include
-*/
+#include "sensors/sensors.h"
+#include "output/output.h"
+#include "telemetry/telemetry.h"
+#include "math/math.h"
+#include "sensors/sensor_registers.h"
+#include "plan/orbit.h"
+#include "plan/att.h"
+//#include "folder/header.h"	--add other headers as needed
+
 
 int main(void) {
-//	Load sensors
-	sensors();
+	init_sensors();			//Load sensors
 	while (1) {
-//		Read sensors
-		read_sensors();
+
+		read_sensors();		//Read sensors
+		double alttitude = get_radio_altitude();
+		double velocity = get_velocity();
+		double fuel = get_fuel_mass();
+		double temperature = get_temperature();
 	}
 
 	return 0;
