@@ -32,11 +32,20 @@ GOMP-SCFS/
 
 # C files functions
 
-main.c -> loop / orchestrator
-att.c -> maneuver & attitude planner
-math.c -> pure math helpers
-sensors.c -> spacecraft state input
-telemetry.c -> gather data for logging
-orbit.c -> orbit-specific calculations
-sensors_register.c -> mock sensor data
-output.c -> display data to console
+main.c ->                               loop / orchestrator
+att.c ->                        maneuver & attitude planner
+math.c ->                                 pure math helpers
+sensors.c ->                         spacecraft state input
+telemetry.c ->                      gather data for logging
+orbit.c ->                      orbit-specific calculations
+sensors_register.c ->                      mock sensor data
+output.c ->                         display data to console
+                                                          
+# Header files functions                                  
+math.h ->                          math helpers declarations
+att.h ->            maneuver & attitude planner declarations
+sensors.h ->             spacecraft state input declarations
+telemetry.h ->                        telemetry declarations
+orbit.h ->          orbit-specific calculations declarations
+sensors_register.h ->          mock sensor data declarations
+output.h ->             display data to console declarations

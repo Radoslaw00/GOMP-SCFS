@@ -11,17 +11,20 @@
 #include "plan/orbit.h"
 #include "plan/att.h"
 //#include "folder/header.h"	--add other headers as needed
+//no libraries here
 
-
+//Start the main event loop
 int main(void) {
-	init_sensors();			//Load sensors
-	while (1) {
+	init_sensors();											//Load sensors
+	while (1) {												//Main event loop
 
-		read_sensors();		//Read sensors
+		read_sensors();										//Read sensors
 		double alttitude = get_radio_altitude();
 		double velocity = get_velocity();
 		double fuel = get_fuel_mass();
 		double temperature = get_temperature();
+		double dry_mass = get_dry_mass();
+		double total_mass = dry_mass + fuel;
 	}
 
 	return 0;
