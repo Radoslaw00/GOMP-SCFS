@@ -3,3 +3,7 @@
 //Collect state and maneuver data for output
 //Format data for logging / display
 //Optionally track multiple iterations for “mission history”
+
+void collect_telemetry_data(void) {
+	// Placeholder for telemetry data collection logic
+}

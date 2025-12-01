@@ -26,6 +26,11 @@ int main(void) {
 		double dry_mass = get_dry_mass();
 		double total_mass = dry_mass + fuel;
 	}
-
+	//do the math
+	//do the orbit math
+	//do the att controls
+	//get telemetry data
+	//output telemetry data
+	//goto read_sensors (repeat infiniteley all the steps)
 	return 0;
 }

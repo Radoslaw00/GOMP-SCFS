@@ -64,3 +64,10 @@ double fuel_mass_fraction(double delta_v, double isp_seconds) {
 	const double g0 = Earth_g;
 	return 1.0 - exp(-delta_v / (isp_seconds * g0));
 }
+
+//Clamp a value between min and max
+double clamp(double value, double min, double max) {
+	if (value < min) return min;
+	if (value > max) return max;
+	return value;
+}
