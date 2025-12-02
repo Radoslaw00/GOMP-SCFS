@@ -2,6 +2,14 @@
 
 /*			!!!		MAIN EVENT LOOP		!!! 		*/
 
+//MAIN TODO LIST INCLUDING ALL FILES:
+//Refine and check all comments that aren't in use change and do more TODO lists
+//Bug and logic fixes in att.c
+//Check math.c functions for correctness
+//Check main att.c "Current TODOs" list and make fixes, improvements and features based on that
+//Check sensors
+//Check what to do in header files
+
 //Include necessary headers
 #include "sensors/sensors.h"
 #include "output/output.h"
