@@ -7,12 +7,16 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\plan\\att.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\radoslaw\\Desktop\\GOMP-SCFS\\src\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\radoslaw\\Desktop\\GOMP-SCFS\\src\\telemetry\\telemetry.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\telemetry\\telemetry.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\radoslaw\\Desktop\\GOMP-SCFS\\src\\telemetry\\telemetry.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\telemetry\\telemetry.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\radoslaw\\Desktop\\GOMP-SCFS\\src\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\radoslaw\\Desktop\\GOMP-SCFS\\src\\sensors\\sensor_registers.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -37,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\radoslaw\\Desktop\\GOMP-SCFS\\src\\sensors\\sensors.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\sensors\\sensors.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\radoslaw\\Desktop\\GOMP-SCFS\\src\\telemetry\\telemetry.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\telemetry\\telemetry.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\radoslaw\\Desktop\\GOMP-SCFS\\src\\math\\math.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -70,11 +70,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "main.c",
               "DocumentMoniker": "C:\\Users\\radoslaw\\Desktop\\GOMP-SCFS\\src\\main.c",
               "RelativeDocumentMoniker": "src\\main.c",
@@ -87,32 +87,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "telemetry.h",
-              "DocumentMoniker": "C:\\Users\\radoslaw\\Desktop\\GOMP-SCFS\\src\\telemetry\\telemetry.h",
-              "RelativeDocumentMoniker": "src\\telemetry\\telemetry.h",
-              "ToolTip": "C:\\Users\\radoslaw\\Desktop\\GOMP-SCFS\\src\\telemetry\\telemetry.h",
-              "RelativeToolTip": "src\\telemetry\\telemetry.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-12-03T12:35:50.643Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "att.c",
               "DocumentMoniker": "C:\\Users\\radoslaw\\Desktop\\GOMP-SCFS\\src\\plan\\att.c",
               "RelativeDocumentMoniker": "src\\plan\\att.c",
               "ToolTip": "C:\\Users\\radoslaw\\Desktop\\GOMP-SCFS\\src\\plan\\att.c",
               "RelativeToolTip": "src\\plan\\att.c",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAADYAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-11-30T00:49:17.05Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "telemetry.c",
+              "DocumentMoniker": "C:\\Users\\radoslaw\\Desktop\\GOMP-SCFS\\src\\telemetry\\telemetry.c",
+              "RelativeDocumentMoniker": "src\\telemetry\\telemetry.c",
+              "ToolTip": "C:\\Users\\radoslaw\\Desktop\\GOMP-SCFS\\src\\telemetry\\telemetry.c",
+              "RelativeToolTip": "src\\telemetry\\telemetry.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-11-30T01:03:45.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "telemetry.h",
+              "DocumentMoniker": "C:\\Users\\radoslaw\\Desktop\\GOMP-SCFS\\src\\telemetry\\telemetry.h",
+              "RelativeDocumentMoniker": "src\\telemetry\\telemetry.h",
+              "ToolTip": "C:\\Users\\radoslaw\\Desktop\\GOMP-SCFS\\src\\telemetry\\telemetry.h",
+              "RelativeToolTip": "src\\telemetry\\telemetry.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-03T12:35:50.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "att.h",
               "DocumentMoniker": "C:\\Users\\radoslaw\\Desktop\\GOMP-SCFS\\src\\plan\\att.h",
               "RelativeDocumentMoniker": "src\\plan\\att.h",
@@ -136,7 +150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "sensors.c",
               "DocumentMoniker": "C:\\Users\\radoslaw\\Desktop\\GOMP-SCFS\\src\\sensors\\sensors.c",
               "RelativeDocumentMoniker": "src\\sensors\\sensors.c",
@@ -145,18 +159,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-11-30T00:40:27.069Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "telemetry.c",
-              "DocumentMoniker": "C:\\Users\\radoslaw\\Desktop\\GOMP-SCFS\\src\\telemetry\\telemetry.c",
-              "RelativeDocumentMoniker": "src\\telemetry\\telemetry.c",
-              "ToolTip": "C:\\Users\\radoslaw\\Desktop\\GOMP-SCFS\\src\\telemetry\\telemetry.c",
-              "RelativeToolTip": "src\\telemetry\\telemetry.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-11-30T01:03:45.981Z"
             },
             {
               "$type": "Document",
@@ -172,7 +174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "math.h",
               "DocumentMoniker": "C:\\Users\\radoslaw\\Desktop\\GOMP-SCFS\\src\\math\\math.h",
               "RelativeDocumentMoniker": "src\\math\\math.h",
@@ -184,7 +186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "sensors.h",
               "DocumentMoniker": "C:\\Users\\radoslaw\\Desktop\\GOMP-SCFS\\src\\sensors\\sensors.h",
               "RelativeDocumentMoniker": "src\\sensors\\sensors.h",
@@ -208,7 +210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "sensor_registers.c",
               "DocumentMoniker": "C:\\Users\\radoslaw\\Desktop\\GOMP-SCFS\\src\\sensors\\sensor_registers.c",
               "RelativeDocumentMoniker": "src\\sensors\\sensor_registers.c",
@@ -220,7 +222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "sensor_registers.h",
               "DocumentMoniker": "C:\\Users\\radoslaw\\Desktop\\GOMP-SCFS\\src\\sensors\\sensor_registers.h",
               "RelativeDocumentMoniker": "src\\sensors\\sensor_registers.h",

@@ -4,6 +4,6 @@
 //Format data for logging / display
 //Optionally track multiple iterations for “mission history”
 
-double collect_telemetry_data(void) {
-	// Placeholder for telemetry data collection logic
+void collect_telemetry_data(double delta_v, double fuel_used, double altitude, double velocity) {
+	//Placeholder for telemetry data collection logic
 }
