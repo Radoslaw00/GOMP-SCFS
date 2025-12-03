@@ -4,7 +4,7 @@ Generic Orbital Maneuver Planner - Shuttle-Class Flight Subsystem
 !!!     This is a documentation file of GOMP-SCFS     !!!
 
 # Main idea
-GOMP-SCFS is a C-based project that aims to create a generic orbital maneuver planner inspired by the Shuttle-Class Flight Subsystem.
+GOMP-SCFS is a C-based project that aims to create a generic orbital maneuver planner.
 The project focuses on developing a modular and extensible codebase that can be used for orbital maneuvers for LEO spacecraft.
 
 # Project Structure

@@ -76,7 +76,7 @@
               "RelativeDocumentMoniker": "src\\main.c",
               "ToolTip": "C:\\Users\\radoslaw\\Desktop\\GOMP-SCFS\\src\\main.c",
               "RelativeToolTip": "src\\main.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAwAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-11-30T00:18:31.448Z",
               "IsPinned": true,
@@ -92,8 +92,7 @@
               "RelativeToolTip": "src\\plan\\att.c",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABMAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-11-30T00:49:17.05Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-30T00:49:17.05Z"
             },
             {
               "$type": "Document",
@@ -105,8 +104,7 @@
               "RelativeToolTip": "src\\plan\\att.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-12-02T09:55:05.834Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-02T09:55:05.834Z"
             },
             {
               "$type": "Document",
@@ -118,8 +116,7 @@
               "RelativeToolTip": "src\\math\\math.c",
               "ViewState": "AgIAADMAAAAAAAAAAAAAAEMAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-11-30T00:45:18.816Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-30T00:45:18.816Z"
             },
             {
               "$type": "Document",
@@ -131,8 +128,7 @@
               "RelativeToolTip": "src\\sensors\\sensors.c",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-11-30T00:40:27.069Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-30T00:40:27.069Z"
             },
             {
               "$type": "Document",
@@ -144,8 +140,7 @@
               "RelativeToolTip": "src\\telemetry\\telemetry.c",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-11-30T01:03:45.981Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-30T01:03:45.981Z"
             },
             {
               "$type": "Document",
@@ -157,8 +152,7 @@
               "RelativeToolTip": "src\\plan\\orbit.c",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-11-30T01:03:20.528Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-30T01:03:20.528Z"
             },
             {
               "$type": "Document",
@@ -170,8 +164,7 @@
               "RelativeToolTip": "src\\math\\math.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-30T01:41:09.956Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-30T01:41:09.956Z"
             },
             {
               "$type": "Document",
@@ -183,8 +176,7 @@
               "RelativeToolTip": "src\\sensors\\sensors.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-30T02:05:35.655Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-30T02:05:35.655Z"
             },
             {
               "$type": "Document",
@@ -208,8 +200,7 @@
               "RelativeToolTip": "src\\sensors\\sensor_registers.c",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-11-30T01:52:10.997Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-30T01:52:10.997Z"
             },
             {
               "$type": "Document",
@@ -221,8 +212,7 @@
               "RelativeToolTip": "src\\sensors\\sensor_registers.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-30T01:52:11.747Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-30T01:52:11.747Z"
             },
             {
               "$type": "Document",
@@ -234,8 +224,7 @@
               "RelativeToolTip": "DOCUMENTATION.md",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-30T00:18:26.749Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-30T00:18:26.749Z"
             },
             {
               "$type": "Document",
