@@ -1,44 +1,88 @@
-//The target platform: Embedded system / RAD CPU class computer
+// ------------------------------[ main.c ]------------------------------
+//  This file contains the main event loop for GOMP-SCFS Flight Computer.
+// ------------------------------[ DISCLAIMER ]------------------------------
+// This software is purely theoretical and is not intended for practical use.
+// This code should not be used in any real spacecraft or embedded systems.
+// This code is provided "as is" without any warranties or my support.
+// Use it at your own risk.
+// I am not responsible for any damage or issues caused by this code.
+// You are free to modify and distribute this code.
+// ------------------------------[ TARGET MCU ]------------------------------
+// This code is intended to run on bare metal microcontrollers without an RTOS or any OS.
+// Clock speed: 512kHz
+// Memory: 64KB Flash, 6KB RAM
+// --------------------------------[ PROJECT ]--------------------------------
+// GOMP-SCFS: Generic Orbital Maneuver Planner - Shuttle-Class Flight Subsystem
+// Controls spacecraft orbital maneuvers based on sensor data.
+// Used for Low Earth Orbit (LEO) mission planning and execution.
+// ------------------------------[ FILE STRUCTURE ]------------------------------
+// Files:	/src/main.c
+//			/src/clock/clock.c | h
+//			/src/logic/logic.c | h
+//			/src/sensors/sensors.c | h
+//			/src/sensors/sensor_registers.c | h
+//			/src/math/math.c | h
+//			/src/plan/orbit.c | h
+//			/src/hardware/tmr.c | h | tmr_sim.c
+// ---------------------------------[ LICENSE ]---------------------------------
+// This code is licensed under the MIT License.
+// ----------------------------------[ AUTHOR ]----------------------------------
+// Author: Radoslaw00
+// Link: https://github.com/Radoslaw00
+// Link to GOMP-SCFS project: https://github.com/Radoslaw00/GOMP-SCFS
+// Discord: ideqe
+// ---------------------------------[ INCLUDES ]---------------------------------
+#include <stdio.h>					// Standard input/output for printf
+#include <stdint.h>					// Fixed-width integer types (uint32_t)
+#include "sensors/sensors.h"		// Sensor interface functions
+#include "sensors/sensor_registers.h"	// Simulated hardware registers
+#include "math/math.h"				// Orbital mechanics calculations
+#include "clock/clock.h"			// Portable timing functions
+#include "logic/logic.h"			// State machine and control logic
+// --------------------------------[ CONSTANTS ]--------------------------------
+#define LOOP_PERIOD_MS 100			// 100ms = 10Hz deterministic loop rate
+// ------------------------------[ MAIN FUNCTION ]------------------------------
+int main(void) {										// Main entry point
+	printf("=== GOMP-SCFS Flight Computer ===\n");		// Print startup message
+	printf("Loop period: %dms\n\n", LOOP_PERIOD_MS);	// Print loop period
 
-/*			!!!		MAIN EVENT LOOP		!!! 		*/
+	clock_init();										// Initialize clock subsystem first
+	init_sensors();										// Initialize sensor registers
 
-//MAIN TODO LIST INCLUDING ALL FILES:
-//Refine and check all comments that aren't in use change and do more TODO lists
-//Bug and logic fixes in att.c
-//Check math.c functions for correctness
-//Check main att.c "Current TODOs" list and make fixes, improvements and features based on that
-//Check sensors
-//Check what to do in header files
+	SpacecraftState state;								// Create spacecraft state struct
+	logic_init(&state);									// Initialize state machine to IDLE
 
-//Include necessary headers
-#include "sensors/sensors.h"
-#include "output/output.h"
-#include "telemetry/telemetry.h"
-#include "math/math.h"
-#include "sensors/sensor_registers.h"
-#include "plan/orbit.h"
-#include "plan/att.h"
-//#include "folder/header.h"	--add other headers as needed
-//no libraries here
+	printf("Initial altitude: %.0f m\n", state.altitude_m);		// Print initial altitude
+	printf("Initial velocity: %.1f m/s\n", state.velocity_mps);	// Print initial velocity
+	printf("Initial fuel: %.1f kg\n", state.fuel_kg);			// Print initial fuel
+	printf("State: %s\n\n", logic_state_name(state.state));		// Print initial state
 
-//Start the main event loop
-int main(void) {
-	init_sensors();											//Load sensors
-	while (1) {												//Main event loop
+	uint32_t cycle = 0;									// Cycle counter for display
+// ------------------------------[ MAIN EVENT LOOP ]------------------------------
+	while (1) {											// Infinite loop - runs forever
+		uint32_t start_ms = clock_get_ms();				// Capture start time for timing control
 
-		read_sensors();										//Read sensors
-		double alttitude = get_radio_altitude();
-		double velocity = get_velocity();
-		double fuel = get_fuel_mass();
-		double temperature = get_temperature();
-		double dry_mass = get_dry_mass();
-		double total_mass = dry_mass + fuel;
-	}
-	//do the math
-	//do the orbit math
-	//do the att controls
-	//get telemetry data
-	//output telemetry data
-	//goto read_sensors (repeat infiniteley all the steps)
-	return 0;
-}
+		read_sensors();									// Read sensor data from registers
+		logic_run_cycle(&state, 0.1);					// Run one cycle of control logic (dt=100ms)
+
+		if (cycle % 10 == 0) {							// Every 10 cycles (1 second)
+			printf("Cycle %4d: Alt=%.0fm, Vel=%.1fm/s, Fuel=%.1fkg, State=%s\n",
+				cycle, state.altitude_m, state.velocity_mps,
+				state.fuel_kg, logic_state_name(state.state));	// Print status
+		}
+
+		cycle++;										// Increment cycle counter
+
+		uint32_t elapsed = clock_get_ms() - start_ms;	// Calculate elapsed time
+		if (elapsed < LOOP_PERIOD_MS) {					// If under 100ms
+			clock_sleep_ms(LOOP_PERIOD_MS - elapsed);	// Sleep for remainder
+		}
+		else {											// If over 100ms
+			printf("WARNING: Loop overrun! Elapsed: %dms\n", elapsed);	// Log warning
+		}
+	}													// Go back to beginning of loop
+	return 0;											// Never reaches here
+	// Note: return 0 is unreachable in this no-os infinite-loop design, but kept
+	// for completeness/compiler satisfaction if compiled in a non-embedded environment.
+}														// End of 'main' function
+// ------------------------------[ END OF FILE ]------------------------------
